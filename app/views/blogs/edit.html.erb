@@ -1,0 +1,11 @@
+<h1> Blog details </h1>
+
+<%= form_for @blog, :url =>{:controller=> "blogs", :action=>"update"} do |f| %>
+  <%= f.label :title %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%= f.text_field :title %> <br/><br/>
+  <%= f.label :description %> &nbsp;&nbsp; <%= f.text_area :description %> <br/><br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <%= f.submit "update blog" %>
+
+<% end %>
+
+<%= link_to "Back to blogs list", "/" %>

@@ -1,0 +1,24 @@
+<div id="horizon" >
+  <div id="container">  
+    <div id="login_panel">
+      <%= link_to 'sign in',  new_user_session_path, :id=> "sign_in" %> 
+      <h2>Sign up</h2>
+
+      <% form_for(resource_name, resource, :url => registration_path(resource_name)) do |f| %>
+        <p><%= f.label :email, :id=>"user_email_label"%></p>
+        <p><%= f.text_field :email %></p>
+
+        <p><%= f.label :password, :id=>"user_password_label"  %></p>
+        <p><%= f.password_field :password %></p>
+
+        <p><%= f.label :password_confirmation, :id=>"password_confirmation_label" %></p>
+        <p><%= f.password_field :password_confirmation %></p>
+
+        <p><%= f.submit "Sign up", :class=>"user_sign_up_submit" %></p>
+      <% end %>
+
+<%#= render :partial => "devise/shared/links" %>
+
+    </div>
+  </div>   
+</div>

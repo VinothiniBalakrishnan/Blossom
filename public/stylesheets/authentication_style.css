@@ -1,0 +1,94 @@
+body {
+    min-width: 930px;
+    height: 100%;
+    background-color: #E31E5C;
+}
+
+#container{
+   background: url("../images/bg_login.gif") no-repeat scroll 50% 50% transparent;
+   color: #FFFFFF;
+   font-family: Verdana,Sans-serif;
+   font-size: 12px;
+   height: 450px;
+   line-height: 140%;
+   margin: 0 auto;
+   position: relative;
+   text-align: left;
+   width: 930px;
+}
+
+#horizon{
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#login_panel  {
+    left: 345px;
+    position: absolute;
+    top: 95px;
+    width: 455px;
+}
+
+#user_email, #user_password, #user_password_confirmation{
+   background: url("../images/bg_login-page-email.gif") no-repeat scroll 0 0 transparent;
+   border: medium none;
+   height: 24px;
+   padding: 10px 15px 0;
+}
+
+#user_language{
+   height: 24px;
+   padding: 0px 15px 0;
+   position: relative;
+   left: 6px;
+}
+
+#user_email_label, #user_password_label, #user_language_label, #language_label, #password_confirmation_label{
+    float: left;
+    font-weight: normal;
+    height: 24px;
+    padding: 10px 5px 0 0;
+    text-align: right;
+    width: 68px;
+}
+#remember_me  {
+    left: 80px;
+    position: relative;
+}
+
+#sign_up, #sign_in{
+   text-decoration: none;
+   color: white;
+}
+
+#user_submit{
+    background-color: white;
+    color: #E31E5C;
+    border: medium none;
+}
+.user_sign_up_submit{
+    background-color: white;
+    color: #E31E5C;
+    border: medium none;
+    position: relative;
+    margin-left: 85px;
+}
+
+#main{
+    background-color: white;
+}
+
+.blog_title{
+    color: Violet;
+    font-family: 'Montez', cursive;
+    font-size: 50px;
+}
+
+.blog_description{
+    color: YellowGreen;
+    font-family: 'Rochester', cursive;
+    font-size: 25px;
+
+}
+

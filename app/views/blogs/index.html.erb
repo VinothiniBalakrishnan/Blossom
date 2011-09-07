@@ -1,0 +1,20 @@
+<div id="main">
+<h1 style="font-family: 'Nixie One', cursive;"> welcome to our Blog section</h1>
+<table cellspacing="5px" cellpadding="5px">
+   
+<% for blogs in @blogs %>
+  <tr>
+     <td class="blog_title"> <%= blogs.title %> </td> 
+     <td class="blog_description"> <%= blogs.description %> </td>
+     <td class="edit_blog"> <%= link_to "edit", "blogs/#{blogs.id}/edit"%> </td>
+     <td class="destroy_blog"> <%= link_to "destroy", "blogs/#{blogs.id}/destroy", 
+                                   :class=>:destroy, :confirm=>"Are you sure?" %> 
+     </td>
+   <tr/>
+<% end %>
+</table>
+<br/><br/>
+<%= will_paginate @blogs %>
+<br/><br/>
+<%= link_to "New Blog ", "/new" %>
+</div>
